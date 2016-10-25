@@ -28,9 +28,9 @@ namespace ArticulosWebApplication.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-2IK02I9\\SQLEXPRESS;Initial Catalog=Ventas;Integrated Security" +
             "=True")]
-        public string VenstasDb {
+        public string VentasDb {
             get {
-                return ((string)(this["VenstasDb"]));
+                return ((string)(this["VentasDb"]));
             }
         }
     }

@@ -42,7 +42,7 @@ namespace BLL
 
             try
             {
-                retorno = Conexion.Ejecutar(string.Format("Insert into Ventas(Descripcion, Foto, Precio) values('{0}', '{1}',{2})", this.Descripcion, this.Foto, this.Precio));
+                retorno = Conexion.Ejecutar(string.Format("Insert into Articulos(Descripcion, Foto, Precio) values('{0}', '{1}',{2})", this.Descripcion, this.Foto, this.Precio));
             }
             catch (Exception ex)
             {
