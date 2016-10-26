@@ -32,6 +32,8 @@
             <td class="auto-style2">&nbsp;</td>
             <td>
                 <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -50,6 +52,7 @@
                 <asp:TextBox ID="IdTextBox" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Button ID="SearchButton" runat="server" OnClick="SearchButton_Click" Text="Buscar" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

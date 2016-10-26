@@ -51,6 +51,7 @@ namespace ArticulosWebApplication.Consultas
             if (e.CommandName == "Agregar")
             {
                 Label3.Text = "Selecciono";
+                //Label4.Text = ArticulosDataList.
 
                
             }
