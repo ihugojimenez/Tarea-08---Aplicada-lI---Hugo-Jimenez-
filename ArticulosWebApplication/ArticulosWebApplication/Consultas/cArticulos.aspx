@@ -30,7 +30,9 @@
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+            </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -77,7 +79,7 @@
             <td>&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td>
-                <asp:DataList ID="ArticulosDataList" runat="server">
+                <asp:DataList ID="ArticulosDataList" runat="server" OnSelectedIndexChanged="ArticulosDataList_SelectedIndexChanged" OnItemCommand="ComandoDatalist">
 
                     
                  <ItemTemplate>
@@ -121,7 +123,7 @@
                                                             <%--<b>Agregar</b>--%>
                                                         </td>
                                                         <td>
-                                                            <asp:Button ID="AddButton" runat="server" Text="Agregar al carrito" />
+                                                            <asp:Button ID="AddButton" runat="server" CommandName="Agregar" Text="Agregar al carrito" />
                                                             
                                                         </td>
                                                     </tr>

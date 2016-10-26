@@ -15,7 +15,22 @@ namespace ArticulosWebApplication.Consultas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            i
+            if(!IsPostBack)
+            {
+                Articulos a = new Articulos();
+                //int id = 0;
+                //int.TryParse(IdTextBox.Text, out id);
+                DataSet ds = a.GetData();
+                ArticulosDataList.DataSource = ds;
+                ArticulosDataList.DataBind();
+
+               
+            }
+
+            //if (ArticulosDataList.DataKeys.ToString())
+            //{
+            //    Label3.Text = "Se presiono";
+            //}
         }
 
         
@@ -23,12 +38,7 @@ namespace ArticulosWebApplication.Consultas
         protected void SearchButton_Click(object sender, EventArgs e)
         {
 
-            Articulos a = new Articulos();
-            //int id = 0;
-            //int.TryParse(IdTextBox.Text, out id);
-            DataSet ds = a.GetData();
-            ArticulosDataList.DataSource = ds;
-            ArticulosDataList.DataBind();
+            
 
             
 
@@ -36,6 +46,21 @@ namespace ArticulosWebApplication.Consultas
         }
 
 
+        protected void ComandoDatalist(object sender, DataListCommandEventArgs e)
+        {
+            if (e.CommandName == "Agregar")
+            {
+                Label3.Text = "Selecciono";
 
+               
+            }
+
+        }
+
+
+        protected void ArticulosDataList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
