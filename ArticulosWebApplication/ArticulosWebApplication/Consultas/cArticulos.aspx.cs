@@ -15,7 +15,7 @@ namespace ArticulosWebApplication.Consultas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            i
         }
 
         
@@ -30,6 +30,12 @@ namespace ArticulosWebApplication.Consultas
             ArticulosDataList.DataSource = ds;
             ArticulosDataList.DataBind();
 
+            
+
+
         }
+
+
+
     }
 }

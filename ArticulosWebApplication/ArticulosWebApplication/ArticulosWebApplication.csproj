@@ -116,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Consultas\cArticulos.aspx" />
+    <Content Include="Consultas\cCarrito.aspx" />
     <Content Include="Imagenes\gorra.jpg" />
     <Content Include="Imagenes\reloj.jpg" />
     <Content Include="Imagenes\sueter.png" />
@@ -131,6 +132,13 @@
     </Compile>
     <Compile Include="Consultas\cArticulos.aspx.designer.cs">
       <DependentUpon>cArticulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\cCarrito.aspx.cs">
+      <DependentUpon>cCarrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\cCarrito.aspx.designer.cs">
+      <DependentUpon>cCarrito.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
