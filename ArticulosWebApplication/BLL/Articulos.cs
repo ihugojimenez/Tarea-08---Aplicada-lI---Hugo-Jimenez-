@@ -1,7 +1,9 @@
 ﻿using DAL;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 
@@ -56,6 +58,19 @@ namespace BLL
         public override DataTable Listado(string Campos, string Condicion, string Orden)
         {
             throw new NotImplementedException();
+        }
+
+        public DataSet GetData()
+        {
+            
+            string Cs = ConfigurationManager.ConnectionStrings["VentasDb"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(Cs))
+            {
+                SqlDataAdapter da = new SqlDataAdapter("Select * from Articulos where 1=1", con);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                return ds;
+            }
         }
     }
 }
